@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Administrator Portfolio | Career Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-server"></i>
+                <span data-i18n="logo">SysAdmin Pro</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#roles" class="nav-link" data-i18n="nav_roles">Roles</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#tools" class="nav-link" data-i18n="nav_tools">Tools</a></li>
+                <li><a href="#playground" class="nav-link" data-i18n="nav_playground">Linux Terminal</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="control-btn" id="theme-toggle" title="Switch to light mode" aria-label="Switch to light mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch-title" data-text="System Administrator">
+                    <span data-i18n="hero_title">System Administrator</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">The Backbone of Modern IT Infrastructure</p>
+                <p class="hero-desc" data-i18n="hero_desc">
+                    Welcome to the ultimate guide to the System Administrator profession. 
+                    Explore the critical roles, essential skills, and powerful tools that keep 
+                    the digital world running smoothly 24/7.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#roles" class="btn btn-primary" data-i18n="btn_explore">Explore Roles</a>
+                    <a href="#about" class="btn btn-secondary" data-i18n="btn_meet">Meet the Developer</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="server-animation">
+                    <div class="server-rack">
+                        <div class="server-unit"></div>
+                        <div class="server-unit"></div>
+                        <div class="server-unit"></div>
+                        <div class="server-unit"></div>
+                    </div>
+                    <div class="floating-icons">
+                        <i class="fas fa-network-wired"></i>
+                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-database"></i>
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-i18n="scroll">Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Roles and Responsibilities -->
+    <section id="roles" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="roles_title">Roles & Responsibilities</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="roles_desc">
+                    System Administrators are the guardians of IT infrastructure. Here are their core responsibilities:
+                </p>
+            </div>
+            <div class="cards-grid">
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon fire-glow">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 data-i18n="role1_title">Installing & Maintaining OS</h3>
+                    <p data-i18n="role1_desc">
+                        Deploy, configure, and maintain operating systems (Windows Server, Linux distributions) 
+                        ensuring optimal performance, security patches, and system updates across the infrastructure.
+                    </p>
+                </div>
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon neon-glow">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 data-i18n="role2_title">Managing User Accounts</h3>
+                    <p data-i18n="role2_desc">
+                        Create, modify, and delete user accounts. Manage permissions, access controls, 
+                        group policies, and enforce security best practices for all system users.
+                    </p>
+                </div>
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon gold-glow">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="role3_title">Monitoring System Performance</h3>
+                    <p data-i18n="role3_desc">
+                        Continuously monitor CPU, memory, disk, and network usage. Identify bottlenecks, 
+                        optimize resources, and ensure high availability of critical services.
+                    </p>
+                </div>
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon purple-glow">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3 data-i18n="role4_title">Backups & Recovery</h3>
+                    <p data-i18n="role4_desc">
+                        Design and implement robust backup strategies. Perform regular backups, test recovery 
+                        procedures, and ensure business continuity in case of data loss or disasters.
+                    </p>
+                </div>
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon blue-glow">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 data-i18n="role5_title">Troubleshooting Issues</h3>
+                    <p data-i18n="role5_desc">
+                        Diagnose and resolve hardware, software, and network problems. Provide rapid 
+                        response to incidents, minimize downtime, and document solutions for future reference.
+                    </p>
+                </div>
+                <div class="card role-card" data-aos="fade-up">
+                    <div class="card-icon lavender-glow">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 data-i18n="role6_title">Security Management</h3>
+                    <p data-i18n="role6_desc">
+                        Implement firewalls, antivirus, intrusion detection systems. Apply security patches, 
+                        manage certificates, and protect systems against evolving cyber threats.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="skills_title">Technical & Professional Skills</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="skills_desc">
+                    A successful System Administrator masters both hard technical skills and soft professional abilities.
+                </p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 class="skills-category"><i class="fas fa-code"></i> <span data-i18n="tech_skills">Technical Skills</span></h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill1">Operating System Administration</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill2">Networking (TCP/IP, DNS, DHCP)</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill3">Scripting (PowerShell, Bash, Python)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill4">Virtualization & Cloud</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill5">Security & Hardening</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="skills-category"><i class="fas fa-user-tie"></i> <span data-i18n="pro_skills">Professional Skills</span></h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill6">Problem-Solving & Critical Thinking</span>
+                            <span class="skill-percent">94%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 94%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill7">Communication & Documentation</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill8">Time Management & Prioritization</span>
+                            <span class="skill-percent">89%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 89%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill9">Team Collaboration</span>
+                            <span class="skill-percent">91%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 91%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-i18n="skill10">Continuous Learning</span>
+                            <span class="skill-percent">96%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 96%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="tools_title">System Administration Tools</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="tools_desc">
+                    Master these essential tools and technologies used daily by professional System Administrators.
+                </p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card" data-tool="windows">
+                    <div class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Server" loading="lazy">
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Windows Server</h3>
+                    <p data-i18n="tool1_desc">Enterprise-grade server OS for managing networks, Active Directory, file services, and enterprise applications.</p>
+                    <a href="https://www.microsoft.com/en-us/windows-server" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+                <div class="tool-card" data-tool="ubuntu">
+                    <div class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu Server" loading="lazy">
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Ubuntu Server</h3>
+                    <p data-i18n="tool2_desc">Powerful open-source Linux distribution ideal for servers, cloud, containers, and high-performance computing.</p>
+                    <a href="https://ubuntu.com/server" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+                <div class="tool-card" data-tool="powershell">
+                    <div class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" alt="PowerShell" loading="lazy">
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>PowerShell</h3>
+                    <p data-i18n="tool3_desc">Task automation and configuration management framework from Microsoft. Essential for Windows administration.</p>
+                    <a href="https://learn.microsoft.com/en-us/powershell/" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+                <div class="tool-card" data-tool="ssh">
+                    <div class="tool-image">
+                        <i class="fas fa-terminal tool-icon-large"></i>
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>SSH (Secure Shell)</h3>
+                    <p data-i18n="tool4_desc">Cryptographic network protocol for secure remote login and command execution on remote systems.</p>
+                    <a href="https://www.openssh.com/" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+                <div class="tool-card" data-tool="virtualbox">
+                    <div class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/virtualbox/virtualbox-original.svg" alt="VirtualBox" loading="lazy">
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>VirtualBox</h3>
+                    <p data-i18n="tool5_desc">Free and open-source virtualization software for creating and managing virtual machines on your desktop.</p>
+                    <a href="https://www.virtualbox.org/" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+                <div class="tool-card" data-tool="docker">
+                    <div class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+                        <div class="tool-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Docker</h3>
+                    <p data-i18n="tool6_desc">Platform for developing, shipping, and running applications in containers for consistency across environments.</p>
+                    <a href="https://www.docker.com/" target="_blank" rel="noopener" class="tool-link">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_site">Official Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linux Terminal -->
+    <section id="playground" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="playground_title">Linux Command Prompt</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc" data-i18n="playground_desc">
+                    Explore a simulated Linux terminal. Type <code>help</code> to see available commands.
+                </p>
+            </div>
+            <div class="playground-container">
+                <div class="terminal-window">
+                    <div class="terminal-titlebar">
+                        <div class="terminal-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span>shane@sysadmin: ~</span>
+                        <button class="terminal-clear" id="terminal-clear" type="button" aria-label="Clear terminal">Clear</button>
+                    </div>
+                    <div class="terminal-output" id="terminal-output" role="log" aria-live="polite" aria-label="Linux terminal output"></div>
+                    <form class="terminal-prompt" id="terminal-form" autocomplete="off">
+                        <label class="terminal-user" for="terminal-input">shane@sysadmin:<span id="terminal-path">~</span>$</label>
+                        <input id="terminal-input" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Linux command">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Developer -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about_title">About the Developer</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="profile-frame" id="profile-frame">
+                        <div class="profile-glow"></div>
+                        <img src="images 01.jpg" alt="Shane Ashley Nicole A. Bernardo" id="profile-pic" class="profile-pic">
+                        <div class="fairy-dust" id="fairy-dust"></div>
+                    </div>
+                    <div class="name-surprise" id="dev-name">
+                        <h3 class="developer-name" data-i18n="dev_name">Shane Ashley Nicole A. Bernardo</h3>
+                        <span class="sparkle">✨</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="dev-course" data-i18n="dev_course">
+                        <i class="fas fa-graduation-cap"></i> BS Information Technology | System Administration Track
+                    </p>
+                    <p data-i18n="dev_intro">
+                        Passionate aspiring System Administrator with a strong foundation in computer systems, 
+                        networking, and cybersecurity. I love solving complex technical problems and keeping 
+                        systems running at peak performance.
+                    </p>
+                    <p data-i18n="dev_interest">
+                        My interest in the IT industry stems from a deep curiosity about how technology powers 
+                        the modern world. I am particularly drawn to infrastructure management, automation, 
+                        and building resilient systems that organizations can rely on.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">Cloud</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Security</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-i18n="footer_text">© 2025 System Administrator Career Portfolio. Built with passion for IT.</p>
+                <p class="footer-note" data-i18n="footer_note">Created by Shane Ashley Nicole A. Bernardo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Tool Images -->
+    <div class="modal" id="tool-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-img" src="" alt="Tool">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
